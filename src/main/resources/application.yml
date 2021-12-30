@@ -1,0 +1,61 @@
+server:
+  port: 8081
+
+## LOGGING
+logging:
+  level:
+    org.quartz: ERROR
+    org.springframework: ERROR
+    it.besmart: DEBUG
+    #eu.chargetime.ocpp: DEBUG
+  file:
+    name: log.log
+
+##DB
+spring:
+  quartz: 
+    job-store-type: jdbc
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+##### COMPLETE WITH DB DATA FOR CONNECTION ###
+    url: jdbc:mysql://localhost:3306/ocpp?
+            createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: echarge
+    password: echarge-password
+
+
+##### COMPLETE WITH DATA FOR SERVER CONNECTION ###
+port:
+  ocppJ16: 8087
+  ocppS16: 8089
+
+
+##### COMPLETE WITH DATA FOR CLIENT CONNECTION ###
+url:
+  authStart: ""
+  authStop: ""
+  startTx: ""
+  stopTx: ""
+  diagnResult: ""
+
+##### COMPLETE WITH DATA FOR FTP CONNECTION (default port 21) ###
+ftp:
+  user: ""
+  password: ""
+  serverUrl: "192"
+  serverDirectory: ""
+  baseDirectory: ""
+
+
+
+
+
+
+
+
+
+

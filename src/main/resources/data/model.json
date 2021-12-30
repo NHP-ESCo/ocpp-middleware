@@ -1,0 +1,69 @@
+{ 
+    "name": "Standard 2x22kW",
+	"brandCode": "059015",
+	"protocols": ["OCPPJ16", "OCPP20"],
+    "powerTypes": ["TRIPHASE"],
+    "capabilities": [
+        {
+            "type": "Reservable",
+            "status": "Enabled",
+            "editable": false
+        }
+    ],
+	"units": [
+		{
+			"ref": 1,
+			"connectors":[
+				{
+					"ref": 1, 
+					"plugType": "TYPE2_OUTLET",
+                    "minCurrentT": 8,
+                    "maxCurrent": 32
+				},
+				{
+					"ref": 2,
+					"plugType": "SCHUKO",
+                    "minCurrentM": 10,
+                    "maxCurrent": 10
+				}
+			]
+		},
+		{
+			"ref": 2,
+			"connectors":[
+				{
+					"ref": 3,
+					"plugType": "TYPE2_OUTLET",
+                    "minCurrentT": 8,
+                    "maxCurrent": 32
+				},
+				{
+					"ref": 4,
+					"plugType": "SCHUKO",
+                    "minCurrentM": 10,
+                    "maxCurrent": 10
+				}
+				
+			]
+		}
+	],
+    "parameters": [
+        {
+            "name": "Mode",
+            "type": "Select",
+            "defaultValue": "1",
+            "selectValues": [
+                
+                {
+                    "optionValue": "1",
+                    "optionName": "ON"
+                },
+                {
+                    "optionValue": "0",
+                    "optionName": "OFF"
+                }
+                
+            ]
+        }
+    ]
+}

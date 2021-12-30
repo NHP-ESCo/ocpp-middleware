@@ -1,0 +1,867 @@
+[
+  {
+    "autoconfigured": 0,
+    "defaultValue": false,
+    "editable": 1,
+    "name": "AllowOfflineTxForUnknownId",
+    "type": "Boolean",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": false,
+    "editable": 1,
+    "name": "AuthorizationCacheEnabled",
+    "type": "Boolean",
+    "visible": 1,
+    "description": "If this key reports a value of true, the Authorization Cacheis enabled.",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": false,
+    "editable": 1,
+    "name": "AuthorizeRemoteTxRequests",
+    "type": "Boolean",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 1,
+    "name": "BlinkRepeat",
+    "type": "Integer",
+    "visible": 0,
+    "description": "Number of times to blink Charge Point lighting when signalling",
+    "maxValue": 10,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 900,
+    "editable": 1,
+    "name": "ClockAlignedDataInterval",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 3600,
+    "minValue": 10
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 120,
+    "editable": 1,
+    "name": "ConnectionTimeOut",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 600,
+    "minValue": 60
+  },
+  {
+    "autoconfigured": 1,
+    "defaultValue": "RST",
+    "editable": 1,
+    "name": "ConnectorPhaseRotation",
+    "type": "String",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "ConnectorPhaseRotationMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "GetConfigurationMaxKeys",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 1800,
+    "editable": 1,
+    "name": "HeartbeatInterval",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 10800,
+    "minValue": 300
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 1,
+    "name": "LightIntensity",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 100,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": false,
+    "editable": 1,
+    "name": "LocalAuthorizeOffline",
+    "type": "Boolean",
+    "visible": 1,
+    "description": "Whether the station, when offline, will start a transaction for locally-authorized identifiers.",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": true,
+    "editable": 1,
+    "name": "LocalPreAuthorize",
+    "type": "Boolean",
+    "visible": 1,
+    "description": "Whether the station, when online, will start a transaction for locally-authorized identifiers without waiting for orrequesting an authorization",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 0,
+    "editable": 1,
+    "name": "MaxEnergyOnInvalidId",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 1,
+    "name": "MeterValuesAlignedData",
+    "type": "MultiSelect",
+    "selectValues": [
+      {
+        "optionName": "Active Power",
+        "optionValue": "Power.Active.Import"
+      },
+      {
+        "optionName": "Imported Energy",
+        "optionValue": "Energy.Active.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Frequency"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Active.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import"
+      }
+    ],
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "MeterValuesAlignedDataMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 1,
+    "name": "MeterValuesSampledData",
+    "type": "MultiSelect",
+    "selectValues": [
+      {
+        "optionName": "Active Power",
+        "optionValue": "Power.Active.Import"
+      },
+      {
+        "optionName": "Imported Energy",
+        "optionValue": "Energy.Active.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Frequency"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Active.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import"
+      }
+    ],
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "MeterValuesSampledDataMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 120,
+    "editable": 1,
+    "name": "MeterValueSampleInterval",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 600,
+    "minValue": 30
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 5,
+    "editable": 1,
+    "name": "MinimumStatusDuration",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "NumberOfConnectors",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 3,
+    "editable": 1,
+    "name": "ResetRetries",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 100,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": true,
+    "editable": 1,
+    "name": "StopTransactionOnEVSideDisconnect",
+    "type": "Boolean",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": true,
+    "editable": 1,
+    "name": "StopTransactionOnInvalidId",
+    "type": "Boolean",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 1,
+    "name": "StopTxnAlignedData",
+    "type": "MultiSelect",
+    "selectValues": [
+      {
+        "optionName": "Active Power",
+        "optionValue": "Power.Active.Import"
+      },
+      {
+        "optionName": "Imported Energy",
+        "optionValue": "Energy.Active.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Frequency"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Active.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import"
+      }
+    ],
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "StopTxnAlignedDataMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 1,
+    "name": "StopTxnSampledData",
+    "type": "MultiSelect",
+    "selectValues": [
+      {
+        "optionName": "Active Power",
+        "optionValue": "Power.Active.Import"
+      },
+      {
+        "optionName": "Imported Energy",
+        "optionValue": "Energy.Active.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L3-L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L2-L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-N"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage.L1-L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Voltage"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Reactive.Import"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Power.Active.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Frequency"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Register"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Reactive.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Energy.Active.Import.Interval"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L3"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L2"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import.L1"
+      },
+      {
+        "optionName": "NULL",
+        "optionValue": "Current.Import"
+      }
+    ],
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "StopTxnSampledDataMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "SupportedFeatureProfiles",
+    "type": "String",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "SupportedFeatureProfilesMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 3,
+    "editable": 1,
+    "name": "TransactionMessageAttempts",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 30,
+    "editable": 1,
+    "name": "TransactionMessageRetryInterval",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": true,
+    "editable": 1,
+    "name": "UnlockConnectorOnEVSideDisconnect",
+    "type": "Boolean",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": 60,
+    "editable": 1,
+    "name": "WebSocketPingInterval",
+    "type": "Integer",
+    "visible": 1,
+    "description": "NULL",
+    "maxValue": 600,
+    "minValue": 30
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": true,
+    "editable": 1,
+    "name": "LocalAuthListEnabled",
+    "type": "Boolean",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "LocalAuthListMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "SendLocalListMaxLength",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "ReserveConnectorZeroSupported",
+    "type": "Boolean",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "ChargeProfileMaxStackLevel",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "ChargingScheduleAllowedChargingRateUnit",
+    "type": "String",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "ChargingScheduleMaxPeriods",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "ConnectorSwitch3to1PhaseSupported",
+    "type": "Boolean",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  },
+  {
+    "autoconfigured": 0,
+    "defaultValue": "NULL",
+    "editable": 0,
+    "name": "MaxChargingProfilesInstalled",
+    "type": "Integer",
+    "visible": 0,
+    "description": "NULL",
+    "maxValue": 0,
+    "minValue": 0
+  }
+]
