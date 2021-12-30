@@ -57,6 +57,7 @@ Our next steps will be for sure:
 - Integrate OCPP2.0 in the application
 
 LICENSE
+
 This software is released under MIT license
 
 We hope this application could be a good starting point for new projects. Good luck everybody!
